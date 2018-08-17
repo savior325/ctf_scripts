@@ -3,6 +3,7 @@
 
 import sys
 import random
+# pip install opencv-python
 
 cmd = None
 debug = False
@@ -55,6 +56,7 @@ if __name__ == '__main__':
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 # OpenCV是以(BGR)的顺序存储图像数据的
 # 而Matplotlib是以(RGB)的顺序显示图像的
