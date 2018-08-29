@@ -1,0 +1,5 @@
+从weevely的模块提取出来模块
+
+usage:python test.py intofile  outfile
+
+http://www.wooyun.org/whitehats/%E5%86%B7%E5%86%B7%E7%9A%84%E5%A4%9C
