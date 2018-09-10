@@ -1,0 +1,12 @@
+http://10.12.110.99:7600/include/inc/inc_stat.php
+flag{c5ef26be108d801f}<br>
+
+
+http://10.12.110.99:7600/include/inc/inc_stat.php
+flag{c5ef26be108d801f}<br>
+
+
+http://10.12.110.99:7600/include/inc/inc_stat.php
+flag{c5ef26be108d801f}<br>
+
+

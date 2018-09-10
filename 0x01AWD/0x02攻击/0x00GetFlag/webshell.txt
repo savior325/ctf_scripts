@@ -1,0 +1,3 @@
+http://10.12.110.99:7600/include/inc/inc_stat.php,post,-7
+http://10.12.110.99:7600/include/inc/inc_stat.php,post,-7
+http://10.12.110.99:7600/include/inc/inc_stat.php,post,-7
