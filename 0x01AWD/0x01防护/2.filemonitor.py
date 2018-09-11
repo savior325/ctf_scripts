@@ -12,13 +12,14 @@ FILE_MD5_DICT = {}      # 文件MD5字典
 ORIGIN_FILE_LIST = []
 
 # 特殊文件路径字符串
-Special_path_str = 'drops_JWI96TY7ZKNMQPDRUOSG0FLH41A3C5EXVB82'
-bakstring = 'bak_EAR1IBM0JT9HZ75WU4Y3Q8KLPCX26NDFOGVS'
-logstring = 'log_WMY4RVTLAJFB28960SC3KZX7EUP1IHOQN5GD'
-webshellstring = 'webshell_WMY4RVTLAJFB28960SC3KZX7EUP1IHOQN5GD'
-difffile = 'diff_UMTGPJO17F82K35Z0LEDA6QB9WH4IYRXVSCN'
+Special_path_str = 'drops_QAZWSXEDC'
+bakstring = 'bak_0a751581d5e1b56c29c213ee06c99419'
+logstring = 'log_dc1d71bbb5c4d2a5e936db79ef10c19f'
+webshellstring = 'webshell_4eff2c041976ea22afb7092a53188c70'
+difffile = 'diff_2d2dee7af60385a060eae7f556845a8b'
 
-Special_string = 'drops_log'  # 免死金牌
+#Special_string = 'drops_log'  # 免死金牌
+Special_string = 'PK325'
 UNICODE_ENCODING = "utf-8"
 INVALID_UNICODE_CHAR_FORMAT = r"\?%02x"
 
@@ -170,5 +171,5 @@ if __name__ == '__main__':
                     except Exception as e:
                         print u'[-] log error : done_diff: ' + getUnicode(filekey)
                         pass
-        time.sleep(2)
+        time.sleep(1)
         # print '[*] ' + getUnicode(time.ctime())

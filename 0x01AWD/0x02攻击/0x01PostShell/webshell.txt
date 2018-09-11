@@ -1,0 +1,5 @@
+http://10.12.110.95/nick1.php,post,c
+http://10.12.110.96/nick.php,post,c
+http://10.12.110.97/nick.php,post,c
+http://10.12.110.98/nick.php,post,c
+http://10.12.110.107/nick1.php,post,c

