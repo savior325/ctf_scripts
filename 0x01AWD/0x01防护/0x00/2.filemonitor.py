@@ -12,7 +12,7 @@ FILE_MD5_DICT = {}      # 文件MD5字典
 ORIGIN_FILE_LIST = []
 
 # 特殊文件路径字符串
-Special_path_str = 'drops_QAZWSXEDC'
+Special_path_str = 'drops_QAZWSXEDC#edc'
 bakstring = 'bak_0a751581d5e1b56c29c213ee06c99419'
 logstring = 'log_dc1d71bbb5c4d2a5e936db79ef10c19f'
 webshellstring = 'webshell_4eff2c041976ea22afb7092a53188c70'
