@@ -11,8 +11,8 @@ IP_WAF      防火墙开关
 $time=date('m_d_H_').(int)(date('i')/10);
 $remote_ip = $_SERVER['REMOTE_ADDR'];
 define('WAF_PATH','/var/www/html/my_waf/');
-define('LOG_PATH','/var/www/html/my_waf/log/');
-define('LOG_ALL_PATH','/var/www/html/my_waf/log_all/');
+define('LOG_PATH','/tmp/waf/log/');
+define('LOG_ALL_PATH','/tmp/waf/log_all/');
 define('LOG_FILENAME',LOG_PATH."cap-".$remote_ip."-".$time.'.txt');
 define('LOG_ALL_FILENAME',LOG_ALL_PATH."allcap-".$remote_ip."-".$time.'.txt');
 define('LOG_HTTP',true);

