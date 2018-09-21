@@ -1,11 +1,11 @@
-[\*] Usage :
-        python master.py [no_file_shell] [webshell]
-[\*] Explain :
-        no_file_shell:  undead shell without using script tags <?..?>, which looks like php -r
-        webshell:       new webshell filename, which ALREADY modified in undead.php by $file
-
-[\*] ATTENTION :
-        DO modify the reverse IP and PORT!!!
+[\*] Usage :  
+        python master.py [no_file_shell] [webshell]  
+[\*] Explain :  
+        no_file_shell:  undead shell without using script tags <?..?>, which looks like php -r  
+        webshell:       new webshell filename, which ALREADY modified in undead.php by $file  
+  
+[\*] ATTENTION :  
+        DO modify the reverse IP and PORT!!!  
 
 
 利用已存在的webshell（如RCE），在不上传文件的情况下，在服务器直接生成不死马进程，生成小马同时利用crontab反弹shell
