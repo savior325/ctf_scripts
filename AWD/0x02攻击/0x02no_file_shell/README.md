@@ -18,7 +18,7 @@ webshell:       new webshell filename, which ALREADY modified in undead.php by $
 [\*] ATTENTION :  
         ==DO modify the reverse IP and PORT!!!==   
 
-利用已存在的webshell（如RCE），在不上传文件的情况下，在服务器直接生成不死马进程，生成小马同时利用crontab反弹shell
+利用已存在代码执行漏洞，在不上传文件的情况下，在服务器直接生成不死马进程，生成小马同时利用crontab反弹shell
 
 1.修改不死马中反弹shell的ip和port  
 2.将已知的可利用webshell写入webshell.txt  
