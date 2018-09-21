@@ -1,4 +1,4 @@
-lstr="""aZZg/x\ZbavpZiEZp+n)o+"""
+lstr="""e6ece1e7fbb8b4b5e2e6b9e5b7e3e6e4e4b8b5e5b8b7e3b3b5b8b6b7b3b5e1e1e4e5e6e4b1fd"""
 
 for p in range(127):
 	str1 = ''

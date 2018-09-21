@@ -1,0 +1,28 @@
+
+    <html><head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>502 Urlfetch Error</title>
+    <style><!--
+    body {font-family: arial,sans-serif}
+    div.nav {margin-top: 1ex}
+    div.nav A {font-size: 10pt; font-family: arial,sans-serif}
+    span.nav {font-size: 10pt; font-family: arial,sans-serif; font-weight: bold}
+    div.nav A,span.big {font-size: 12pt; color: #0000cc}
+    div.nav A {font-size: 10pt; color: black}
+    A.l:link {color: #6f6f6f}
+    A.u:link {color: green}
+    //--></style>
+    </head>
+    <body text=#000000 bgcolor=#ffffff>
+    <table border=0 cellpadding=2 cellspacing=0 width=100%>
+    <tr><td bgcolor=#3366cc><font face=arial,sans-serif color=#ffffff><b>Message From FetchServer</b></td></tr>
+    <tr><td> </td></tr></table>
+    <blockquote>
+    <H1>Python Urlfetch Error: 'GET'</H1>
+    ConnectionClosedError('Connection closed unexpectedly by server at URL: http://bshare.optimix.asia/bshare_view?Callback=bShare.viewcb&url=http%3A%2F%2Ftool.oschina.net%2Fencrypt&h=&uuid=&l=17&lite=1&ref=https%3A%2F%2Fwww.google.com.hk%2F&ot=%E5%9C%A8%E7%BA%BF%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86&cs=UTF-8&kws=%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD%20%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7,ostools,jsbin,%E5%8A%A0%E5%AF%86/%E8%A7%A3%E5%AF%86%EF%BC%8CMarkdown,less,java%20api,php%20api,node.js%20api,QR%20Code&fp=0a3e0896cac11422218ed6e3cfeda0c0&b=bs242117',), timeout=19<br />
+ConnectionClosedError('Connection closed unexpectedly by server at URL: http://bshare.optimix.asia/bshare_view?Callback=bShare.viewcb&url=http%3A%2F%2Ftool.oschina.net%2Fencrypt&h=&uuid=&l=17&lite=1&ref=https%3A%2F%2Fwww.google.com.hk%2F&ot=%E5%9C%A8%E7%BA%BF%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86&cs=UTF-8&kws=%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD%20%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7,ostools,jsbin,%E5%8A%A0%E5%AF%86/%E8%A7%A3%E5%AF%86%EF%BC%8CMarkdown,less,java%20api,php%20api,node.js%20api,QR%20Code&fp=0a3e0896cac11422218ed6e3cfeda0c0&b=bs242117',), timeout=38
+    <p>
+    </blockquote>
+    <table width=100% cellpadding=0 cellspacing=0><tr><td bgcolor=#3366cc><img alt="" width=1 height=4></td></tr></table>
+    </body></html>
+    
