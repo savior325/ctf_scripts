@@ -13,12 +13,12 @@ $remote_ip = $_SERVER['REMOTE_ADDR'];
 define('WAF_PATH','/var/www/html/my_waf/');
 define('LOG_PATH','/tmp/waf/log/');
 define('LOG_ALL_PATH','/tmp/waf/log_all/');
-define('LOG_FILENAME',LOG_PATH."cap-".$remote_ip."-".$time.'.txt');
-define('LOG_ALL_FILENAME',LOG_ALL_PATH."allcap-".$remote_ip."-".$time.'.txt');
+define('LOG_FILENAME',LOG_PATH.$remote_ip."-".$time.'.txt');
+define('LOG_ALL_FILENAME',LOG_ALL_PATH.$remote_ip."-".$time.'.txt');
 define('LOG_HTTP',true);
 define('IP_WAF',false);
 define('ALL_RECORD',true);
-define('DEBUG',true);
+define('DEBUG',false);
 
 if(DEBUG){
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
@@ -98,8 +98,12 @@ function logging($var,$filename,$isdie)
     //echo $http_log;
     if(LOG_HTTP){file_put_contents($filename, $http_log,  FILE_APPEND);}
     if($isdie){
-	echo 'I am waf';
-        die();// die() or unset($_GET) or unset($_POST) or unset($_COOKIE);
+        if(IP_WAF)
+            ip_waf();
+	    else{
+            // echo 'I am waf';
+            // die() or unset($_GET) or unset($_POST) or unset($_COOKIE);
+        }
     }
 }
 
@@ -107,13 +111,14 @@ function ip_waf()
 {
     $ip = $_SERVER['REMOTE_ADDR'];
     $white_ip_list = array('127.0.0.1');
-    $black_ip_list = array('192.168.37.1');
-    if(in_array($ip,$black_ip_list) || !in_array($ip,$white_ip_list))
-	exit('403 forbidden');
+    $black_ip_list = array('192.168.37.1','192.168.31.1');
+    // white_list or black_list
+//    if(!in_array($ip,$white_ip_list))
+        if(in_array($ip,$black_ip_list))
+            //header("Location: http://192.168.31.152/"); 
+            die("403 forbidden");// die() or unset($_GET) or unset($_POST) or unset($_COOKIE);
 }
 
 waf();
-if(IP_WAF){
-    ip_waf();
-}	
+
 ?>

